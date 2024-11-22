@@ -28,28 +28,19 @@ public class MainActivity extends AppCompatActivity {
         Button btnItalic = findViewById(R.id.btnItalic);
         Button btnUnderline = findViewById(R.id.btnUnderline);
 
-        btnBold.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                isBold = !isBold;
-                updateTextStyle();
-            }
+        btnBold.setOnClickListener(v -> {
+            isBold = !isBold;
+            updateTextStyle();
         });
 
-        btnItalic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                isItalic = !isItalic;
-                updateTextStyle();
-            }
+        btnItalic.setOnClickListener(v -> {
+            isItalic = !isItalic;
+            updateTextStyle();
         });
 
-        btnUnderline.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                isUnderlined = !isUnderlined;
-                updateTextStyle();
-            }
+        btnUnderline.setOnClickListener(v -> {
+            isUnderlined = !isUnderlined;
+            updateTextStyle();
         });
     }
 
